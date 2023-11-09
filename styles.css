@@ -1,18 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0; /* Remove default body margin */
+}
 
-header, nav {
-    display:flex;
+header {
+    display: flex;
     justify-content: space-between;
     padding: 1%;
     background-color: steelblue;
-    position:relative;
     align-items: flex-end;
     color: black;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: steelblue;
+    align-items: flex-end;
+    color: black;
+
+}
+
 nav ul {
-    display:flex;
+    display: flex;
     list-style-type: none;
-    justify-content:flex-end;
+    justify-content: flex-end;
     min-width: 500px;
 }
 
@@ -29,12 +44,63 @@ nav li {
     padding: 0 5px;
 }
 
-h1 {
-    background-color:cadetblue;
-    padding: 5px 5px 5px 35px;  
-
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0;
 }
-.hero img (
+
+h1 {
+    background-color: cadetblue;
+    padding: 5px 5px 5px 35px;  
+}
+
+.hero {
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    text-align:end;
+    border-width: 1px;
+    width:max-content;
+}
+
+.hero img {
     width: 100%;
     height: auto;
-)
+}
+
+.subtitle-box {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.content {
+    display:block;
+}
+
+.aboutme {
+    order: 2;
+    margin: 10px 0 0 10px;
+    background-color: #fff;
+}
+
+.aside-aboutme {
+    order: 1;
+    margin: 30px 0 0 20px;
+    background-color: #fff;
+    border-right: solid black 3px;
+    padding-right: 30px;
+    display: flex;
+    height:225px;
+    text-align: end;
+    font-size: 35px;
+}
+
+.work {
+    
+}
+
