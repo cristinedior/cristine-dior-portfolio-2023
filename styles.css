@@ -1,9 +1,11 @@
+
 body {
-    display: flex;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.2;
-    margin: 0; /* Remove default body margin */
+    min-width: 100vh;
+    justify-content: flex-start;
+    color: black;
 }
 
 header {
@@ -11,16 +13,12 @@ header {
     justify-content: space-between;
     padding: 1%;
     background-color: steelblue;
-    align-items: flex-end;
-    color: black;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: steelblue;
     align-items: flex-end;
-    color: black;
 
 }
 
@@ -39,15 +37,13 @@ nav a {
 
 nav li {
     margin-right: 10px;
-    color: black;
     border-bottom: 2px solid #000;
     padding: 0 5px;
 }
 
 main {
     display: flex;
-    max-width: 1200px;
-    margin: 0;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -55,52 +51,181 @@ h1 {
     padding: 5px 5px 5px 35px;  
 }
 
+h2 {
+    text-align: right;
+}
 .hero {
-    display: block;
     padding: 0%;
     margin: 0%;
     text-align:end;
-    border-width: 1px;
     width:max-content;
 }
+
 
 .hero img {
     width: 100%;
     height: auto;
-}
-
-.subtitle-box {
-    align-self: flex-end;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    background-color: antiquewhite;
-    padding: 2px;
-    border-radius: 5px;
-}
-
-.content {
-    display:block;
-}
-
-.aboutme {
-    order: 2;
-    margin: 10px 0 0 10px;
-    background-color: #fff;
-}
-
-.aside-aboutme {
-    order: 1;
-    margin: 30px 0 0 20px;
-    background-color: #fff;
-    border-right: solid black 3px;
-    padding-right: 30px;
-    display: flex;
-    height:225px;
-    text-align: end;
-    font-size: 35px;
-}
-
-.work {
     
 }
 
+#subtitle-box::backdrop {
+    
+    bottom: 20px;
+    right: 20px;
+    background-color: antiquewhite;
+    padding: 2px;
+    border-radius: 5px;
+ }
+
+/*this is the section for the about me*/
+ 
+.container {
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+aside {
+    border-right: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    padding:10px;
+}
+
+.aside1 {
+    padding-left: 8%;
+}
+
+
+.paragraph {
+    display: flex;
+    margin-top: 20%;
+    width: 5%;
+}
+
+.container-work {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.aside2 {
+    padding-left: 10%;
+    height: 300px;
+}
+
+
+.container-work img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    margin-left: 2%;
+    max-width: 90%;
+    z-index: 0;
+    border: 5px solid black;
+    margin: 2%;
+}
+
+.flex-container {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 1%;
+}
+
+.experience {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    flex: 400px;
+    margin: 20px;
+    width: 100%;
+}
+.experience img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.textbox, .textbox-work{
+    position: absolute;
+    background-color:  black;
+    color: white;
+    font-size: larger;
+    margin-top: 15%;
+    padding: 5px;
+    z-index: 1;
+}
+
+.textbox-work {    
+    margin-left: 11%;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contactlist ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+    min-width: 500px;
+}
+
+.contactlist a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.contactlist li {
+    margin-right: 10px;
+    border-bottom: 2px solid #000;
+    padding: 0 5px;
+    list-style-type: none;
+}
+
+.contactlist {
+    display: flex;
+    margin-top: 20%;
+    width: 5%;
+}
+
+.contact .aside3 {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact img {
+    order: 2;
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    max-width: 90%;
+    z-index: 0;
+    border: 5px solid black;
+    margin: 2%;
+}
+ .contact .contactlist {
+    order: 2;
+
+ }
+
+ .aside3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
